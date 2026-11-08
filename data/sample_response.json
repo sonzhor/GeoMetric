@@ -1,0 +1,46 @@
+{
+  "input_type": "city",
+  "query": "Москва",
+  "coordinates": {
+    "lat": 55.7558,
+    "lon": 37.6173
+  },
+  "radius_km": 5.0,
+  "indicators": {
+    "population_density": 8470.9,
+    "green_space_ratio": 0.075,
+    "infrastructure_index": 0.853,
+    "transport_access": 0.953,
+    "economic_activity": 0.823
+  },
+  "prediction": {
+    "development_score": 82.65,
+    "development_level": "highly_developed",
+    "top_contributing_factors": [
+      {
+        "feature": "infra_x_econ",
+        "importance": 0.809,
+        "value": 0.702
+      },
+      {
+        "feature": "density_x_infra",
+        "importance": 0.153,
+        "value": 0.3613
+      },
+      {
+        "feature": "transport_access",
+        "importance": 0.021,
+        "value": 0.953
+      },
+      {
+        "feature": "infrastructure_index",
+        "importance": 0.002,
+        "value": 0.853
+      }
+    ]
+  },
+  "meta": {
+    "model": "GradientBoostingRegressor (v3)",
+    "model_r2": 0.97
+  }
+}

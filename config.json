@@ -1,0 +1,20 @@
+{
+  "app_name": "Geo Intelligence API",
+  "version": "3.0.0",
+  "model": {
+    "path": "models/development_model.joblib",
+    "features_path": "models/feature_names.joblib",
+    "meta_path": "models/model_meta.json",
+    "type": "GradientBoostingRegressor",
+    "r2": 0.97
+  },
+  "data": {
+    "cities": "data/cities.json",
+    "training_samples": "data/training_samples.csv",
+    "sample_response": "data/sample_response.json"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "default_port": 8000
+  }
+}

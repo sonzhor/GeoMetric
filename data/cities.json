@@ -1,0 +1,327 @@
+[
+  {
+    "name": "sydney",
+    "lat": -33.8688,
+    "lon": 151.2093
+  },
+  {
+    "name": "sao paulo",
+    "lat": -23.5505,
+    "lon": -46.6333
+  },
+  {
+    "name": "singapore",
+    "lat": 1.3521,
+    "lon": 103.8198
+  },
+  {
+    "name": "mumbai",
+    "lat": 19.076,
+    "lon": 72.8777
+  },
+  {
+    "name": "dubai",
+    "lat": 25.2048,
+    "lon": 55.2708
+  },
+  {
+    "name": "cairo",
+    "lat": 30.0444,
+    "lon": 31.2357
+  },
+  {
+    "name": "los angeles",
+    "lat": 34.0522,
+    "lon": -118.2437
+  },
+  {
+    "name": "tokyo",
+    "lat": 35.6762,
+    "lon": 139.6503
+  },
+  {
+    "name": "seoul",
+    "lat": 37.5665,
+    "lon": 126.978
+  },
+  {
+    "name": "beijing",
+    "lat": 39.9042,
+    "lon": 116.4074
+  },
+  {
+    "name": "new york",
+    "lat": 40.7128,
+    "lon": -74.006
+  },
+  {
+    "name": "istanbul",
+    "lat": 41.0082,
+    "lon": 28.9784
+  },
+  {
+    "name": "makhachkala",
+    "lat": 42.9849,
+    "lon": 47.5047
+  },
+  {
+    "name": "vladivostok",
+    "lat": 43.1155,
+    "lon": 131.8855
+  },
+  {
+    "name": "sochi",
+    "lat": 43.6028,
+    "lon": 39.7342
+  },
+  {
+    "name": "toronto",
+    "lat": 43.6532,
+    "lon": -79.3832
+  },
+  {
+    "name": "krasnodar",
+    "lat": 45.0355,
+    "lon": 38.9753
+  },
+  {
+    "name": "stavropol",
+    "lat": 45.0445,
+    "lon": 41.9691
+  },
+  {
+    "name": "astrakhan",
+    "lat": 46.3497,
+    "lon": 48.0408
+  },
+  {
+    "name": "rostov-on-don",
+    "lat": 47.2357,
+    "lon": 39.7015
+  },
+  {
+    "name": "khabarovsk",
+    "lat": 48.4827,
+    "lon": 135.0838
+  },
+  {
+    "name": "volgograd",
+    "lat": 48.708,
+    "lon": 44.5133
+  },
+  {
+    "name": "paris",
+    "lat": 48.8566,
+    "lon": 2.3522
+  },
+  {
+    "name": "belgorod",
+    "lat": 50.5954,
+    "lon": 36.5873
+  },
+  {
+    "name": "london",
+    "lat": 51.5074,
+    "lon": -0.1278
+  },
+  {
+    "name": "saratov",
+    "lat": 51.5336,
+    "lon": 46.0343
+  },
+  {
+    "name": "voronezh",
+    "lat": 51.672,
+    "lon": 39.1843
+  },
+  {
+    "name": "kursk",
+    "lat": 51.7373,
+    "lon": 36.1873
+  },
+  {
+    "name": "orenburg",
+    "lat": 51.7727,
+    "lon": 55.0988
+  },
+  {
+    "name": "ulan-ude",
+    "lat": 51.8335,
+    "lon": 107.5841
+  },
+  {
+    "name": "irkutsk",
+    "lat": 52.2869,
+    "lon": 104.305
+  },
+  {
+    "name": "berlin",
+    "lat": 52.52,
+    "lon": 13.405
+  },
+  {
+    "name": "lipetsk",
+    "lat": 52.6031,
+    "lon": 39.5708
+  },
+  {
+    "name": "penza",
+    "lat": 53.2001,
+    "lon": 45.0
+  },
+  {
+    "name": "samara",
+    "lat": 53.2415,
+    "lon": 50.2212
+  },
+  {
+    "name": "bryansk",
+    "lat": 53.2521,
+    "lon": 34.3717
+  },
+  {
+    "name": "barnaul",
+    "lat": 53.3548,
+    "lon": 83.7698
+  },
+  {
+    "name": "magnitogorsk",
+    "lat": 53.4186,
+    "lon": 58.9795
+  },
+  {
+    "name": "togliatti",
+    "lat": 53.5303,
+    "lon": 49.3461
+  },
+  {
+    "name": "novokuznetsk",
+    "lat": 53.7596,
+    "lon": 87.1216
+  },
+  {
+    "name": "tula",
+    "lat": 54.1931,
+    "lon": 37.6173
+  },
+  {
+    "name": "ulyanovsk",
+    "lat": 54.3142,
+    "lon": 48.4031
+  },
+  {
+    "name": "ryazan",
+    "lat": 54.6269,
+    "lon": 39.6916
+  },
+  {
+    "name": "kaliningrad",
+    "lat": 54.7104,
+    "lon": 20.4522
+  },
+  {
+    "name": "ufa",
+    "lat": 54.7388,
+    "lon": 55.9721
+  },
+  {
+    "name": "omsk",
+    "lat": 54.9885,
+    "lon": 73.3242
+  },
+  {
+    "name": "novosibirsk",
+    "lat": 55.0084,
+    "lon": 82.9357
+  },
+  {
+    "name": "chelyabinsk",
+    "lat": 55.1644,
+    "lon": 61.4368
+  },
+  {
+    "name": "kemerovo",
+    "lat": 55.3549,
+    "lon": 86.0873
+  },
+  {
+    "name": "naberezhnye chelny",
+    "lat": 55.7436,
+    "lon": 52.3958
+  },
+  {
+    "name": "moscow",
+    "lat": 55.7558,
+    "lon": 37.6173
+  },
+  {
+    "name": "kazan",
+    "lat": 55.7961,
+    "lon": 49.1064
+  },
+  {
+    "name": "krasnoyarsk",
+    "lat": 56.0153,
+    "lon": 92.8932
+  },
+  {
+    "name": "cheboksary",
+    "lat": 56.1439,
+    "lon": 47.2489
+  },
+  {
+    "name": "nizhny novgorod",
+    "lat": 56.2965,
+    "lon": 43.9361
+  },
+  {
+    "name": "tomsk",
+    "lat": 56.4846,
+    "lon": 84.9476
+  },
+  {
+    "name": "yekaterinburg",
+    "lat": 56.8389,
+    "lon": 60.6057
+  },
+  {
+    "name": "izhevsk",
+    "lat": 56.8527,
+    "lon": 53.2115
+  },
+  {
+    "name": "tver",
+    "lat": 56.8587,
+    "lon": 35.9176
+  },
+  {
+    "name": "ivanovo",
+    "lat": 56.9991,
+    "lon": 40.9728
+  },
+  {
+    "name": "tyumen",
+    "lat": 57.1522,
+    "lon": 65.5272
+  },
+  {
+    "name": "yaroslavl",
+    "lat": 57.6261,
+    "lon": 39.8845
+  },
+  {
+    "name": "perm",
+    "lat": 58.0105,
+    "lon": 56.2502
+  },
+  {
+    "name": "kirov",
+    "lat": 58.6035,
+    "lon": 49.668
+  },
+  {
+    "name": "saint petersburg",
+    "lat": 59.9343,
+    "lon": 30.3351
+  }
+]

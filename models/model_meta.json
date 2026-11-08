@@ -1,0 +1,54 @@
+{
+  "version": "3.0",
+  "best_model": "GradientBoosting",
+  "n_samples": 12000,
+  "features": [
+    "population_density",
+    "green_space_ratio",
+    "infrastructure_index",
+    "transport_access",
+    "economic_activity",
+    "log_density",
+    "density_x_infra",
+    "green_x_transport",
+    "infra_x_econ",
+    "urban_balance",
+    "congestion_proxy"
+  ],
+  "metrics": {
+    "HistGradientBoosting": {
+      "mae": 2.887,
+      "rmse": 3.639,
+      "r2": 0.9653,
+      "cv_r2_mean": 0.9662,
+      "cv_r2_std": 0.001
+    },
+    "GradientBoosting": {
+      "mae": 2.88,
+      "rmse": 3.616,
+      "r2": 0.9658,
+      "cv_r2_mean": 0.9671,
+      "cv_r2_std": 0.0011
+    },
+    "RandomForest": {
+      "mae": 2.905,
+      "rmse": 3.643,
+      "r2": 0.9652,
+      "cv_r2_mean": 0.9671,
+      "cv_r2_std": 0.0008
+    }
+  },
+  "selected_metrics": {
+    "mae": 2.88,
+    "rmse": 3.616,
+    "r2": 0.9658,
+    "cv_r2_mean": 0.9671,
+    "cv_r2_std": 0.0011
+  },
+  "sanity_check": {
+    "low_development": 11.72,
+    "high_urban": 83.19,
+    "dense_weak_infra": 25.62
+  },
+  "dataset": "data/training_samples.csv"
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1" />
+  <title>Geo Intelligence — Анализ развития района</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <h1>Geo Intelligence</h1>
+        <p class="subtitle">Прогноз уровня развития территории</p>
+      </div>
+      <a href="/docs" target="_blank" class="api-link">API Docs →</a>
+    </header>
+
+    <main>
+      <section class="card input-card">
+        <div class="tabs">
+          <button class="tab active" data-tab="city">Город</button>
+          <button class="tab" data-tab="coords">Координаты</button>
+          <button class="tab" data-tab="map">Карта</button>
+          <button class="tab" data-tab="compare">Сравнение</button>
+        </div>
+
+        <!-- City -->
+        <div id="panel-city" class="panel active">
+          <label for="city">Название города</label>
+          <input id="city" type="text" placeholder="Москва, London, Tokyo..." value="Москва" />
+          <div class="quick-cities">
+            <button type="button" data-city="Москва">Москва</button>
+            <button type="button" data-city="Санкт-Петербург">СПб</button>
+            <button type="button" data-city="Казань">Казань</button>
+            <button type="button" data-city="Сочи">Сочи</button>
+            <button type="button" data-city="London">London</button>
+            <button type="button" data-city="Tokyo">Tokyo</button>
+            <button type="button" data-city="New York">New York</button>
+            <button type="button" data-city="Dubai">Dubai</button>
+            <button type="button" data-city="Singapore">Singapore</button>
+          </div>
+        </div>
+
+        <!-- Coords -->
+        <div id="panel-coords" class="panel">
+          <div class="row">
+            <div class="field">
+              <label for="lat">Широта</label>
+              <input id="lat" type="number" step="any" value="55.7558" />
+            </div>
+            <div class="field">
+              <label for="lon">Долгота</label>
+              <input id="lon" type="number" step="any" value="37.6173" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div id="panel-map" class="panel">
+          <p class="hint">Кликните на карту, чтобы выбрать точку</p>
+          <div id="map" class="map-box"></div>
+          <p id="map-coords" class="muted map-coords-label">Точка не выбрана</p>
+        </div>
+
+        <!-- Compare -->
+        <div id="panel-compare" class="panel">
+          <label>Локации (город или lat,lon) — по одной на строку, 2–5 шт.</label>
+          <textarea id="compare-list" rows="4" placeholder="Москва&#10;Санкт-Петербург&#10;Казань">Москва
+Санкт-Петербург
+Токио</textarea>
+        </div>
+
+        <div class="field radius-field" id="radius-wrap">
+          <label for="radius">Радиус анализа, км: <span id="radius-val">5</span></label>
+          <input id="radius" type="range" min="1" max="30" value="5" />
+        </div>
+
+        <button id="analyze-btn" class="btn-primary">
+          <span class="btn-text">Анализировать</span>
+          <span class="btn-loader hidden"></span>
+        </button>
+      </section>
+
+      <!-- Single result -->
+      <section id="result" class="card result-card hidden">
+        <div class="result-header">
+          <div>
+            <h2 id="result-title">Результат</h2>
+            <p id="result-coords" class="muted"></p>
+          </div>
+          <div id="score-badge" class="score-badge">
+            <span id="score-value">—</span>
+            <small>из 100</small>
+          </div>
+        </div>
+        <div class="level-bar-wrap">
+          <div class="level-label" id="level-label">—</div>
+          <div class="level-bar"><div id="level-fill" class="level-fill"></div></div>
+        </div>
+        <h3>Индикаторы</h3>
+        <div id="indicators" class="indicators-grid"></div>
+        <h3>Топ-факторы модели</h3>
+        <div id="factors" class="factors-list"></div>
+        <details class="raw-json">
+          <summary>Сырой JSON</summary>
+          <pre id="raw-json"></pre>
+        </details>
+      </section>
+
+      <!-- Compare results -->
+      <section id="compare-result" class="card result-card hidden">
+        <h2>Сравнение локаций</h2>
+        <p id="compare-summary" class="muted" style="margin-bottom:1rem"></p>
+        <div id="compare-table" class="compare-table"></div>
+        <details class="raw-json">
+          <summary>Сырой JSON</summary>
+          <pre id="compare-raw"></pre>
+        </details>
+      </section>
+
+      <section id="error" class="card error-card hidden">
+        <p id="error-msg"></p>
+      </section>
+    </main>
+
+    <footer>
+      FastAPI · Scikit-learn · v2.1
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
